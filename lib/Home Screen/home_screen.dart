@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:islamy_app/Common/app_colors.dart';
 import 'package:islamy_app/Common/app_images.dart';
-import 'package:islamy_app/Tabs/hadeth_tab.dart';
-import 'package:islamy_app/Tabs/quran_tab.dart';
-import 'package:islamy_app/Tabs/radio_tab.dart';
-import 'package:islamy_app/Tabs/sebha_tab.dart';
-import 'package:islamy_app/Tabs/time_tab.dart';
+import 'package:islamy_app/Tabs/Hadeth%20Tab/hadeth_tab.dart';
+import 'package:islamy_app/Tabs/Quran%20Tab/quran_tab.dart';
+import 'package:islamy_app/Tabs/Radio%20Tab/radio_tab.dart';
+import 'package:islamy_app/Tabs/Sebha%20Tab/sebha_tab.dart';
+import 'package:islamy_app/Tabs/TimeTab/time_tab.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({super.key});
@@ -28,6 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    var height = MediaQuery.of(context).size.height;
     return Stack(
       children: [
         Image.asset(
@@ -69,7 +70,13 @@ class _HomeScreenState extends State<HomeScreen> {
           body: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Image.asset(AppImages.headerLogo),
+              Padding(
+                padding: EdgeInsets.only(
+                  top: height * 0.032,
+                  bottom: height * 0.02,
+                ),
+                child: Image.asset(AppImages.headerLogo, height: height * 0.15),
+              ),
               Expanded(child: tabs[selectedTab]),
             ],
           ),
@@ -83,7 +90,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ? Container(
             padding: EdgeInsets.symmetric(vertical: 6, horizontal: 20),
             decoration: BoxDecoration(
-              color: AppColors.blackColor,
+              color: AppColors.blackColor.withOpacity(0.7),
               borderRadius: BorderRadius.circular(44),
             ),
             child: SvgPicture.asset(
