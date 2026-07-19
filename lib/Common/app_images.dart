@@ -8,6 +8,8 @@ class AppImages {
   static final String searchIcon = "assets/images/search_icon.png";
   static final String mostRecent = "assets/images/img_most_recent.png";
   static final String detailsFrame = "assets/images/details_frame.png";
+  static final String sebhaFlag = "assets/images/sebha_flag.png";
+  static final String sebhaBody = "assets/images/SebhaBody .png";
 
 
 
