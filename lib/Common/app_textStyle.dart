@@ -33,4 +33,9 @@ class AppTextStyle {
     fontWeight: FontWeight.bold,
     color: AppColors.blackColor,
   );
+  static final TextStyle bold36White = GoogleFonts.lora(
+    fontSize: 36,
+    fontWeight: FontWeight.bold,
+    color: AppColors.whiteColor,
+  );
 }
