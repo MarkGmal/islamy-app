@@ -13,6 +13,11 @@ class AppTextStyle {
     fontWeight: FontWeight.bold,
     color: AppColors.whiteColor,
   );
+  static final TextStyle bold16Gold = GoogleFonts.lora(
+    fontSize: 16,
+    fontWeight: FontWeight.bold,
+    color: AppColors.primaryColor,
+  );
   static final TextStyle bold20White = GoogleFonts.lora(
     fontSize: 20,
     fontWeight: FontWeight.bold,
@@ -32,6 +37,11 @@ class AppTextStyle {
     fontSize: 24,
     fontWeight: FontWeight.bold,
     color: AppColors.blackColor,
+  );
+  static final TextStyle bold24Gold = GoogleFonts.lora(
+    fontSize: 24,
+    fontWeight: FontWeight.bold,
+    color: AppColors.primaryColor,
   );
   static final TextStyle bold36White = GoogleFonts.lora(
     fontSize: 36,
