@@ -10,6 +10,13 @@ class AppImages {
   static final String detailsFrame = "assets/images/details_frame.png";
   static final String sebhaFlag = "assets/images/sebha_flag.png";
   static final String sebhaBody = "assets/images/SebhaBody .png";
+  static final String intro1 = "assets/onBoarding_imges/1.png";
+  static final String intro2 = "assets/onBoarding_imges/2.png";
+  static final String intro3 = "assets/onBoarding_imges/3.png";
+  static final String intro4 = "assets/onBoarding_imges/4.png";
+  static final String intro5 = "assets/onBoarding_imges/5.png";
+
+
 
 
 
